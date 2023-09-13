@@ -8,7 +8,6 @@
 #### Deploy on Render
 
 - Create Render account
-- remove/copy from the main repo
 - add dev command "nodemon app.js"
 - change start to "node app.js"
 - setup node version in package.json
