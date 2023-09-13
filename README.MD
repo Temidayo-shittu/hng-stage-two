@@ -38,16 +38,7 @@
 - [] create user
 - [] send response with entire user (only while testing)
 
-
-#### Create Docs
-
-- [] [Docgen Library] (https://github.com/thedevsaddam/docgen)
-- [] Export Postman Collection
-- [] docgen build -i fileName.json -o index.html
-- [] create index.html in public
-
-
-#### Deploy on Heroku
+#### Deploy on Render
 
 - [] Create Render account
 - [] remove/copy from the main repo
@@ -64,3 +55,10 @@
 - [] connect git repo to render
 - [] setup env vars
 
+#### Source Code Link
+
+- https://github.com/Temidayo-shittu/hng-stage-two
+
+#### Postman Collection Link
+
+- 

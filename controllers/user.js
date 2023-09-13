@@ -31,7 +31,7 @@ const getSingleUser = async(req,res)=>{
 }
 
 const getMyUser = async(req,res)=>{
-    const { name,id }= req.query
+    const { name }= req.query
     const user = await User.findOne({name:name})
     if(!user) throw new CustomError.NotFoundError(`User with the given name: ${name} not found`)
     res.status(StatusCodes.OK).json({
