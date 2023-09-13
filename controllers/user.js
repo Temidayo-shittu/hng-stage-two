@@ -21,7 +21,7 @@ const getAllUsers= async(req,res)=>{
 }
 
 const getSingleUser = async(req,res)=>{
-    const {id:user_id}= req.params
+    const {user_id}= req.params
     const user = await User.findOne({_id:user_id})
     if(!user) throw new CustomError.NotFoundError(`User with the given ID: ${user_id} not found`)
     res.status(StatusCodes.OK).json({
@@ -30,18 +30,8 @@ const getSingleUser = async(req,res)=>{
     })
 }
 
-const getMyUser = async(req,res)=>{
-    const { name }= req.query
-    const user = await User.findOne({name:name})
-    if(!user) throw new CustomError.NotFoundError(`User with the given name: ${name} not found`)
-    res.status(StatusCodes.OK).json({
-        status: "success",
-        data: user
-    })
-}
-
 const updateUser = async(req,res)=>{
-    const { id:user_id }= req.params
+    const { user_id }= req.params
     const user = await User.findOneAndUpdate({_id:user_id},req.body,{new:true,runValidators:true})
     if(!user) throw new CustomError.NotFoundError(`User with the given ID: ${user_id} not found`)
     res.status(StatusCodes.OK).json({
@@ -51,7 +41,7 @@ const updateUser = async(req,res)=>{
 }
 
 const deleteUser = async(req,res)=>{
-    const {id:user_id}= req.params
+    const {user_id}= req.params
     const user = await User.findOne({_id:user_id})
     if(!user) throw new CustomError.NotFoundError(`User with the given ID: ${user_id} not found`)
     await user.remove()
@@ -65,7 +55,6 @@ module.exports= {
     createUser,
     getAllUsers,
     getSingleUser,
-    getMyUser,
     updateUser,
     deleteUser
 }
