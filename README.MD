@@ -1,6 +1,6 @@
 ## Hosted Project
 
-[User-Resource API Render URL](https://e-commerce-api-10.herokuapp.com/)
+[User-Resource API Render URL](https://hng-stage-two-6ztw.onrender.com/)
 
 #### Setup Basic Express Server
 
@@ -23,13 +23,11 @@
 - [] setup 404 and errorHandler middleware
 - [] import 'exress-async-errors' package
 
-
 #### User Model
 
 - create model folder and User.js file
 - create schema with name ( type:String)
 - export mongoose model
-
 
 #### Test Routes in Postman
 
@@ -39,27 +37,7 @@
 - send response with entire user (only while testing)
 - create the rest crud operations(get all users, get single user, update user and delete user)
 
-#### Deploy on Render
-
-- Create Render account
-- remove/copy from the main repo
-- add dev command "nodemon app.js"
-- change start to "node app.js"
-- setup node version in package.json
-- "engines": {"node": "14.x"}
-- Procfile "web: node app.js"
-- git init
-- git add .
-- git commit -m "initial commit"
-- git push render master/main
-- render login
-- connect git repo to render
-- setup env vars
-
 #### Source Code Link
 
 - https://github.com/Temidayo-shittu/hng-stage-two
 
-#### Postman Collection Link
-
-- https://elements.getpostman.com/redirect?entityId=26636754-aab25820-f498-4104-bab1-4887f8799b8d&entityType=collection

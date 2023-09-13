@@ -13,6 +13,10 @@ const errorHandlerMiddleware= require('./middleware/error-handler')
 
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+    res.send('USER RESURCE SYSTEM RUNNING')
+})
+
 app.use('/api',userRouter)
 
 const port= process.env.PORT || 5000
