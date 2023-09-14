@@ -14,7 +14,10 @@ const errorHandlerMiddleware= require('./middleware/error-handler')
 app.use(express.json());
 
 app.get('/api',(req,res)=>{
-    res.send('USER RESOURCE SYSTEM RUNNING')
+    res.json({
+        message:'USER RESOURCE SYSTEM RUNNING',
+        postmanLink: 'https://elements.getpostman.com/redirect?entityId=26636754-aab25820-f498-4104-bab1-4887f8799b8d&entityType=collection'
+    })
 })
 
 app.use('/api',userRouter)
