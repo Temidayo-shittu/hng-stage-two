@@ -1,6 +1,6 @@
 ## Hosted Project
 
-[User-Resource API Render URL](https://hng-stage-two-6ztw.onrender.com/api)
+[User-Resource API Render URL](https://upset-pink-ox.cyclic.app/api)
 
 #### Setup Basic Express Server
 

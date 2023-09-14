@@ -5,9 +5,9 @@
 - The postman documentation shows a standard format for requests for each endpoint
 - It also shows the sample usage of the API, including example requests and expected responses
 
-#### Deploy on Render
+#### Deploy on Cyclic
 
-- Create Render account
+- Create Cyclic account
 - add dev command "nodemon app.js"
 - change start to "node app.js"
 - setup node version in package.json
@@ -15,7 +15,7 @@
 - git init
 - git add .
 - git commit -m "initial commit"
-- git push render master/main
-- render login
-- connect git repo to render
+- git pus master/main
+- cyclic login
+- connect git repo to cyclic
 - setup env vars
